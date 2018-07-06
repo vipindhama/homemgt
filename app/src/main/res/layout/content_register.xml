@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_register"
+    tools:context=".activities.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_full_name"
+            android:hint="@string/full_name"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:theme="@style/MySelectViewTheme"
+            android:layout_marginTop="@dimen/register_container_margin_top"
+            android:paddingBottom="@dimen/edit_text_vertical_padding"
+            android:paddingTop="@dimen/edit_text_vertical_padding"
+            android:paddingLeft="@dimen/edit_text_horizontal_padding"
+            android:paddingRight="@dimen/edit_text_horizontal_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:hint="@string/email"
+            android:layout_below="@+id/edit_full_name"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone"
+            android:theme="@style/MySelectViewTheme"
+            android:layout_marginTop="@dimen/register_view_margin_top"
+            android:paddingBottom="@dimen/edit_text_vertical_padding"
+            android:paddingTop="@dimen/edit_text_vertical_padding"
+            android:paddingLeft="@dimen/edit_text_horizontal_padding"
+            android:paddingRight="@dimen/edit_text_horizontal_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/text_term_condition"
+            android:layout_below="@+id/edit_email"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/text_forgot_password_padding"
+            android:text="@string/term_condition"
+            android:textColor="@color/grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_below="@+id/text_term_condition"
+            android:text="START"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="@dimen/register_view_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

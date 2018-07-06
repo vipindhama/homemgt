@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/view_horizontal_margin"
+    android:paddingRight="@dimen/view_horizontal_margin"
+    android:paddingTop="@dimen/expense_list_view_padding"
+    android:paddingBottom="@dimen/expense_list_view_padding"
+    android:background="@drawable/background_pressed_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_income"
+        android:layout_toLeftOf="@+id/text_date"
+        android:text="40000 Rs"
+        android:textSize="@dimen/expense_list_large_text_size"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:text="27/01/2018"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/expense_list_large_text_size"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_below="@+id/text_income"
+        android:layout_marginTop="@dimen/expense_list_text_vertical_margin"
+        android:layout_marginRight="8dp"
+        android:text="Shweta"
+        android:textSize="@dimen/expense_list_small_text_size"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_source"
+        android:layout_below="@+id/text_name"
+        android:layout_marginTop="@dimen/expense_list_text_vertical_margin"
+        android:text="Salary"
+        android:textSize="@dimen/expense_list_small_text_size"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/view_horizontal_margin"
+    android:paddingRight="@dimen/view_horizontal_margin"
+    android:paddingTop="@dimen/expense_list_view_padding"
+    android:paddingBottom="@dimen/expense_list_view_padding"
+    android:background="@drawable/background_pressed_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_toLeftOf="@+id/text_date"
+        android:text="Rice"
+        android:textSize="@dimen/expense_list_large_text_size"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:text="27/01/2018"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/expense_list_large_text_size"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_quantity"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_date"
+        android:text="Rice"
+        android:textSize="@dimen/expense_list_large_text_size"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_below="@+id/text_name"
+        android:layout_toLeftOf="@+id/text_quantity"
+        android:layout_marginTop="@dimen/expense_list_text_vertical_margin"
+        android:layout_marginRight="8dp"
+        android:text="Bought 2kg rice for home"
+        android:textSize="@dimen/expense_list_small_text_size"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_price_label"
+        android:layout_below="@+id/text_desc"
+        android:layout_marginTop="@dimen/expense_list_text_vertical_margin"
+        android:text="Price: 100 Rs"
+        android:textSize="@dimen/expense_list_large_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

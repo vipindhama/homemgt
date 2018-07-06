@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/view_horizontal_margin"
+    android:paddingRight="@dimen/view_horizontal_margin"
+    android:paddingTop="@dimen/expense_list_view_padding"
+    android:paddingBottom="@dimen/expense_list_view_padding"
+    android:background="@drawable/background_pressed_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:textSize="@dimen/expense_list_large_text_size"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

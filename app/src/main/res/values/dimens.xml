@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="view_horizontal_margin">10dp</dimen>
+    <dimen name="view_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="drawable_padding">10dp</dimen>
+    <dimen name="btn_size">45dp</dimen>
+
+    <!-- nav. -->
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <!-- Login. -->
+    <dimen name="login_container_vertical_margin">40dp</dimen>
+    <dimen name="edit_text_vertical_padding">12dp</dimen>
+    <dimen name="edit_text_horizontal_padding">10dp</dimen>
+    <dimen name="edit_password_margin_top">10dp</dimen>
+    <dimen name="btn_login_margin_top">30dp</dimen>
+    <dimen name="text_forgot_password_margin_top">10dp</dimen>
+    <dimen name="text_forgot_password_padding">10dp</dimen>
+    <dimen name="login_page_text_size">18sp</dimen>
+    <dimen name="btn_register_margin_top">5dp</dimen>
+
+    <!-- Register. -->
+    <dimen name="register_container_margin_top">20dp</dimen>
+    <dimen name="register_view_margin_top">10dp</dimen>
+
+    <!-- Expense List. -->
+    <dimen name="expense_list_large_text_size">16sp</dimen>
+    <dimen name="expense_list_small_text_size">12sp</dimen>
+    <dimen name="expense_list_action_image_size">100dp</dimen>
+    <dimen name="expense_list_action_image_horizontal_margin">30dp</dimen>
+    <dimen name="expense_list_delete_size">30dp</dimen>
+    <dimen name="expense_list_delete_padding">3dp</dimen>
+    <dimen name="expense_list_edit_size">24dp</dimen>
+    <dimen name="expense_list_edit_padding">5dp</dimen>
+    <dimen name="expense_list_text_size">16sp</dimen>
+    <dimen name="expense_list_text_vertical_margin">3dp</dimen>
+    <dimen name="expense_list_view_padding">16dp</dimen>
+    <dimen name="expense_list_view_margin">12dp</dimen>
+    <dimen name="expense_list_line_horizontal_margin">16dp</dimen>
+    <dimen name="expense_list_size">150dp</dimen>
+    <dimen name="expense_list_quantity_horizontal_padding">12dp</dimen>
+    <dimen name="expense_list_quantity_vertical_padding">8dp</dimen>
+    <dimen name="expense_list_quantity_horizontal_margin">5dp</dimen>
+    <dimen name="expense_list_quantity_vertical_margin">26dp</dimen>
+
+    <!-- Create Expense -->
+    <dimen name="create_expense_edit_text_size">15sp</dimen>
+    <dimen name="create_expense_edit_text_height">45dp</dimen>
+    <dimen name="create_expense_edit_margin_top">10dp</dimen>
+    <dimen name="create_expense_btn_vertical_margin">20dp</dimen>
+    <dimen name="add_btn_text_size">16sp</dimen>
+    <dimen name="add_btn_width">10dp</dimen>
+
+    <!-- Surgery Record. -->
+    <dimen name="relative_date_height">80dp</dimen>
+    <dimen name="relative_date_padding">10dp</dimen>
+    <dimen name="date_text_size">14sp</dimen>
+    <dimen name="date_range_icon_size">24dp</dimen>
+    <dimen name="record_list_text_size">16sp</dimen>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_planner"
+            android:icon="@drawable/ic_donut_large_black_24dp"
+            android:title="Easy Planner" />
+        <item
+            android:id="@+id/nav_expense"
+            android:icon="@drawable/ic_credit_card_black_24dp"
+            android:title="Expenses" />
+        <item
+            android:id="@+id/nav_incomes"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Incomes" />
+
+        <item
+            android:id="@+id/nav_summary"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="Summary" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.homeguide.activities.CreateExpenseActivity"
+    tools:showIn="@layout/activity_create_expense">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionNext"
+                android:hint="Expense Name"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/create_expense_edit_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_expense_edit_text_height" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_expense_by"
+            android:layout_below="@+id/text_input_name"
+            android:layout_marginTop="@dimen/create_expense_edit_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_expense_by"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionNext"
+                android:hint="Expense By (Home, Person name etc...)"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/create_expense_edit_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_expense_edit_text_height" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_expense_by"
+            android:layout_below="@+id/text_expense_by"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            android:elevation="8dp"
+            android:background="@color/grey300"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_desc"
+            android:layout_below="@+id/text_expense_by"
+            android:layout_marginTop="@dimen/create_expense_edit_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_desc"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionNext"
+                android:hint="Expense Description"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/create_expense_edit_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_expense_edit_text_height" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_type"
+            android:layout_below="@+id/text_input_desc"
+            android:layout_marginTop="@dimen/create_expense_edit_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_type"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionNext"
+                android:hint="Expense Type"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/create_expense_edit_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_expense_edit_text_height" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_expense_type"
+            android:layout_below="@+id/text_input_type"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            android:elevation="8dp"
+            android:background="@color/grey300"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_price"
+            android:layout_below="@+id/text_input_type"
+            android:layout_marginTop="@dimen/create_expense_edit_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_price"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"
+                android:hint="Price"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/create_expense_edit_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_expense_edit_text_height" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_qty"
+            android:layout_below="@+id/text_input_price"
+            android:layout_marginTop="@dimen/create_expense_edit_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_qty"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="Qty"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/create_expense_edit_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_expense_edit_text_height" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_date"
+            android:layout_below="@+id/text_input_qty"
+            android:layout_marginTop="@dimen/create_expense_edit_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_date"
+                android:inputType="none"
+                android:focusable="false"
+                android:hint="Expense Date"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/create_expense_edit_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_expense_edit_text_height" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_below="@+id/text_input_date"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:background="@drawable/primary_round_corner_background_selector"
+            android:layout_marginTop="@dimen/create_expense_btn_vertical_margin"
+            android:layout_marginBottom="@dimen/create_expense_btn_vertical_margin"
+            android:textSize="@dimen/add_btn_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</ScrollView>
